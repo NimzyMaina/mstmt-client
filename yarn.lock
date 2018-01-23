@@ -195,6 +195,10 @@
   version "6.0.96"
   resolved "https://registry.yarnpkg.com/@types/node/-/node-6.0.96.tgz#7bf0bf40d6ce51e93762cc47d010c8cc5ebb2179"
 
+"@types/pdfjs-dist@^0.1.1":
+  version "0.1.1"
+  resolved "https://registry.yarnpkg.com/@types/pdfjs-dist/-/pdfjs-dist-0.1.1.tgz#be5ee24fcaece186b25ce11fb1e9aec1087e2c1f"
+
 "@types/q@^0.0.32":
   version "0.0.32"
   resolved "https://registry.yarnpkg.com/@types/q/-/q-0.0.32.tgz#bd284e57c84f1325da702babfc82a5328190c0c5"
@@ -292,6 +296,10 @@ ajv@^5.0.0, ajv@^5.1.0, ajv@^5.1.5, ajv@~5.5.1:
     fast-deep-equal "^1.0.0"
     fast-json-stable-stringify "^2.0.0"
     json-schema-traverse "^0.3.0"
+
+alertifyjs@^1.11.0:
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/alertifyjs/-/alertifyjs-1.11.0.tgz#646f0bbd62edac5bb03cce2d03f4379c84ffde19"
 
 align-text@^0.1.1, align-text@^0.1.3:
   version "0.1.4"
@@ -795,6 +803,10 @@ boom@5.x.x:
   resolved "https://registry.yarnpkg.com/boom/-/boom-5.2.0.tgz#5dd9da6ee3a5f302077436290cb717d3f4a54e02"
   dependencies:
     hoek "4.x.x"
+
+bootstrap@3:
+  version "3.3.7"
+  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-3.3.7.tgz#5a389394549f23330875a3b150656574f8a9eb71"
 
 brace-expansion@^1.1.7:
   version "1.1.8"
@@ -4446,11 +4458,26 @@ netmask@~1.0.4:
   version "1.0.6"
   resolved "https://registry.yarnpkg.com/netmask/-/netmask-1.0.6.tgz#20297e89d86f6f6400f250d9f4f6b4c1945fcd35"
 
+ng2-pdf-viewer@^3.0.8:
+  version "3.0.8"
+  resolved "https://registry.yarnpkg.com/ng2-pdf-viewer/-/ng2-pdf-viewer-3.0.8.tgz#23c3f55a4ba548b73a0717baf2d40c6a9cc9f3f9"
+  dependencies:
+    "@types/pdfjs-dist" "^0.1.1"
+    pdfjs-dist "1.9.489"
+
+ngx-facebook@^2.4.0:
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/ngx-facebook/-/ngx-facebook-2.4.0.tgz#454141ce41118c1956d9db896c956f3891f8bbd7"
+
 no-case@^2.2.0:
   version "2.3.2"
   resolved "https://registry.yarnpkg.com/no-case/-/no-case-2.3.2.tgz#60b813396be39b3f1288a4c1ed5d1e7d28b464ac"
   dependencies:
     lower-case "^1.1.1"
+
+node-ensure@^0.0.0:
+  version "0.0.0"
+  resolved "https://registry.yarnpkg.com/node-ensure/-/node-ensure-0.0.0.tgz#ecae764150de99861ec5c810fd5d096b183932a7"
 
 node-forge@0.6.33:
   version "0.6.33"
@@ -5007,6 +5034,13 @@ pbkdf2@^3.0.3:
     ripemd160 "^2.0.1"
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
+
+pdfjs-dist@1.9.489:
+  version "1.9.489"
+  resolved "https://registry.yarnpkg.com/pdfjs-dist/-/pdfjs-dist-1.9.489.tgz#cae59feddd16a2e5d195aa69527955cfe4002c1d"
+  dependencies:
+    node-ensure "^0.0.0"
+    worker-loader "^0.8.0"
 
 performance-now@^0.2.0:
   version "0.2.0"
@@ -7394,6 +7428,13 @@ worker-farm@^1.5.2:
   dependencies:
     errno "^0.1.4"
     xtend "^4.0.1"
+
+worker-loader@^0.8.0:
+  version "0.8.1"
+  resolved "https://registry.yarnpkg.com/worker-loader/-/worker-loader-0.8.1.tgz#e8e995331ea34df5bf68296824bfb7f0ad578d43"
+  dependencies:
+    loader-utils "^1.0.2"
+    schema-utils "^0.3.0"
 
 wrap-ansi@^2.0.0:
   version "2.1.0"

@@ -1,0 +1,44 @@
+.color-facebook{
+  color:#00539f;
+}
+.navbar-border{
+  border-bottom: solid 5px #0080c5;
+}
+
+.social-login{
+  text-align:center;
+  font-size:12px;
+}
+.social-login p{
+  margin:15px 0;
+}
+.social-login ul{
+  margin:0;
+  padding:0;
+  list-style-type:none;
+}
+.social-login ul li{
+  width:33%;
+  float:left;
+  clear:fix;
+}
+.social-login ul li a{
+  font-size:13px;
+  color:#fff;
+  text-decoration:none;
+  padding:10px 0;
+  display:block;
+}
+.social-login ul li:nth-child(1) a{
+  background:#3b5998;
+}
+.social-login ul li:nth-child(2) a{
+  background:#e74c3d;
+}
+.social-login ul li:nth-child(3) a{
+  background:#3698d9;
+}
+
+.flat {
+  border-radius:0px !important;
+}

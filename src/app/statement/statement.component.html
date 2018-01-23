@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="col-xs-10 col-xs-offset-1">
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Document Path</th>
+          <th>Identification Number</th>
+          <th>Created At</th>
+          <th>View</th>
+        </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let s of statements">
+        <td>{{s.id}}</td>
+        <td>{{s.path}}</td>
+        <td>{{s.description}}</td>
+        <td>{{s.created_at}}</td>
+        <td><a class="btn btn-success flat" [routerLink]="['/pdf/', getPath(s.path), s.description]">View PDF</a></td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
