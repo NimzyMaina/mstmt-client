@@ -21,7 +21,7 @@ export class PdfComponent implements OnInit {
   }
 
   showPdf(url: string, pass: string) {
-    const u = 'http://fe42a7fa.ngrok.io/mpesa/public/storage/uploads/';
+    const u = 'http://api.mstmt.tk/storage/uploads/';
     this.url = u + url + '.pdf';
     this.password = pass;
   }

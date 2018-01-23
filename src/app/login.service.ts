@@ -7,8 +7,8 @@ import {catchError} from 'rxjs/operators';
 @Injectable()
 export class LoginService {
 
-  private loginUrl = 'https://fe42a7fa.ngrok.io/mpesa/public/api/v1/login/facebook';
-  private statementsUrl = 'https://fe42a7fa.ngrok.io/mpesa/public/api/v1/statements';
+  private loginUrl = 'http://api.mstmt.tk/v1/login/facebook';
+  private statementsUrl = 'http://api.mstmt.tk/v1/statements';
 
   constructor(private http: HttpClient) { }
 
