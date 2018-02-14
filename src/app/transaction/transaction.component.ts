@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {LoginService} from '../login.service';
-import {alertify} from '../statement/statement.component';
+declare var alertify: any;
 
 @Component({
   selector: 'app-transaction',
