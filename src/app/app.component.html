@@ -20,6 +20,9 @@
           <li *ngIf="isLoggedIn()" routerLinkActive="active">
             <a routerLink="/statements">My Statements</a>
           </li>
+          <li *ngIf="isLoggedIn()" routerLinkActive="active">
+            <a routerLink="/transactions">My Transactions</a>
+          </li>
         </ul>
         <ul class="nav navbar-nav navbar-right social-login">
           <li *ngIf="!isLoggedIn()">

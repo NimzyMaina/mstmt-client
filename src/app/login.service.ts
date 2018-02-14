@@ -9,6 +9,7 @@ export class LoginService {
 
   private loginUrl = 'http://api.mstmt.tk/v1/login/facebook';
   private statementsUrl = 'http://api.mstmt.tk/v1/statements';
+  private transactionsUrl = 'http://api.mstmt.tk/v1/transactions';
 
   constructor(private http: HttpClient) { }
 
@@ -23,6 +24,16 @@ export class LoginService {
   getStatements() {
     return this.http
       .get(this.statementsUrl, {
+        headers: new HttpHeaders().set('Authorization', `Bearer ${JSON.parse(localStorage.getItem('authUser')).api_token}`)
+      })
+      .pipe(
+        catchError(this.handleError)
+      );
+  }
+
+  getTransactions() {
+    return this.http
+      .get(this.transactionsUrl, {
         headers: new HttpHeaders().set('Authorization', `Bearer ${JSON.parse(localStorage.getItem('authUser')).api_token}`)
       })
       .pipe(

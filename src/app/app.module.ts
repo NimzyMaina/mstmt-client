@@ -11,6 +11,7 @@ import {LoginService} from './login.service';
 import {HttpClientModule} from '@angular/common/http';
 import {PdfViewerModule} from 'ng2-pdf-viewer';
 import { PdfComponent } from './pdf/pdf.component';
+import { TransactionComponent } from './transaction/transaction.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { PdfComponent } from './pdf/pdf.component';
     AppComponent,
     HomeComponent,
     StatementComponent,
-    PdfComponent
+    PdfComponent,
+    TransactionComponent
   ],
   imports: [
     BrowserModule,

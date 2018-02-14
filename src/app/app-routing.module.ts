@@ -4,6 +4,7 @@ import {HomeComponent} from './home/home.component';
 import {StatementComponent} from './statement/statement.component';
 import {AuthGuard} from './auth/auth.guard';
 import {PdfComponent} from './pdf/pdf.component';
+import {TransactionComponent} from './transaction/transaction.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,13 @@ const routes: Routes = [
   {
     path: 'statements',
     component: StatementComponent,
+    canActivate: [
+      AuthGuard
+    ]
+  },
+  {
+    path: 'transactions',
+    component: TransactionComponent,
     canActivate: [
       AuthGuard
     ]
